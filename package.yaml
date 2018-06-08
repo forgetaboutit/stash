@@ -1,10 +1,10 @@
 name:                pfennig
 version:             0.1.0.0
-github:              "githubuser/pfennig"
+github:              "muhbaasu/pfennig"
 license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2018 Author name here"
+author:              "Samuel Schuhmacher"
+maintainer:          "post@muhbaasu.de"
+copyright:           "2018 Samuel Schuhmacher"
 
 extra-source-files:
 - README.md
@@ -22,9 +22,27 @@ description:         Please see the README on Github at <https://github.com/gith
 dependencies:
 - base >= 4.7 && < 5
 - Decimal
+- bytestring
+- cereal
 - containers
+- deepseq
+- fixplate
+- foldl
+- hashids
+- ixset
 - lens
+- mtl
+- pipes
+- pipes-bytestring
+- pipes-cereal
+- pipes-parse
+- pipes-safe
+- random
+- safecopy
+- SHA
+- stm
 - text
+- transformers
 - vector
 
 library:
@@ -38,6 +56,10 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+    - -Wall
+    - -Werror
+    - -Wincomplete-uni-patterns
+    - -Wincomplete-record-updates
     dependencies:
     - pfennig
 
